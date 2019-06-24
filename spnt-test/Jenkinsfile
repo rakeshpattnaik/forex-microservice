@@ -1,0 +1,8 @@
+node{
+  stage('SCM Checkout'){
+    git 'https://github.com/rakeshpattnaik/forex-microservice.git'
+  }
+  stage('Compile And Package'){
+  sh 'mvn package'
+  }
+}
